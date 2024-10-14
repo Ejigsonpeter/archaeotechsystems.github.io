@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHAEOTECH SYSTEMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a5f7a',    // Deeper blue
+                        secondary: '#2d9596',  // Teal
+                        accent: '#f39c12',     // Warm orange
+                        dark: '#2c3e50',       // Deep blue-gray
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-dark">
+    <header class="bg-primary text-white sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold tracking-wider">ARCHAEOTECH SYSTEMS</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#mission" class="hover:text-accent transition duration-300 font-medium">Our Mission</a>
+                    <a href="#services" class="hover:text-accent transition duration-300 font-medium">Services</a>
+                    <a href="#impact" class="hover:text-accent transition duration-300 font-medium">Impact</a>
+                    <a href="#contact" class="hover:text-accent transition duration-300 font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-white py-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <img src="images/logo.png" alt="ARCHAEOTECH SYSTEMS Logo" class="h-80 w-auto mx-auto md:mx-0">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl font-bold mb-4 text-primary leading-tight">Empowering Africa's Digital Future</h1>
+                    <p class="text-2xl mb-8 text-dark font-light">Bridging the technology gap through education and innovation</p>
+                    <a href="#contact" class="bg-secondary text-white py-3 px-8 rounded-full hover:bg-primary transition duration-300 text-lg font-semibold">Join Our Mission</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-primary">Our Mission</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0 slider-container">
+                        <div class="slider">
+                            <img src="images/image1.jpg" alt="African students with laptops">
+                            <img src="images/image2.jpg" alt="African woman using computer">
+                            <img src="images/image3.jpg" alt="African tech workshop">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <p class="text-xl text-dark leading-relaxed">ARCHAEOTECH SYSTEMS is a non-profit organization dedicated to onboarding Africa to all technologies for long-term growth. Our philanthropic training programs aim to boost the digital economy of Africa, equipping the continent's workforce with essential technical skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-primary">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+                        <i class="fas fa-laptop-code text-4xl text-secondary mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Web Development</h3>
+                        <p class="text-dark text-lg">Comprehensive training in modern web technologies and frameworks.</p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+                        <i class="fas fa-network-wired text-4xl text-secondary mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Networking</h3>
+                        <p class="text-dark text-lg">In-depth courses on network infrastructure and management.</p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+                        <i class="fas fa-shield-alt text-4xl text-secondary mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Cyber Security</h3>
+                        <p class="text-dark text-lg">Cutting-edge training in digital security and threat prevention.</p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+                        <i class="fab fa-microsoft text-4xl text-secondary mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Office 365</h3>
+                        <p class="text-dark text-lg">Mastering essential productivity tools for the modern workplace.</p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+                        <i class="fab fa-azure text-4xl text-secondary mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Azure DevOps</h3>
+                        <p class="text-dark text-lg">Training in cloud-based DevOps practices and tools.</p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
+                        <i class="fas fa-tasks text-4xl text-secondary mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Project Management</h3>
+                        <p class="text-dark text-lg">Developing skills in effective project planning and execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 text-primary">Our Impact</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0 slider-container">
+                        <div class="slider">
+                            <img src="images/image4.jpg" alt="African tech professionals">
+                            <img src="images/image5.jpg" alt="African women in tech">
+                            <img src="images/image6.jpg" alt="African man coding">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <p class="text-xl text-dark leading-relaxed">Through our training programs, we've empowered thousands of African professionals with cutting-edge technical skills. Our graduates are driving innovation, starting tech businesses, and contributing to the growth of Africa's digital economy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Get Involved</h2>
+            <form class="max-w-lg mx-auto" action="https://formsubmit.co/sage0x1@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission from ARCHAEOTECH SYSTEMS website!">
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                <div class="mb-6">
+                    <input type="text" name="name" placeholder="Name" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary text-lg">
+                </div>
+                <div class="mb-6">
+                    <input type="email" name="email" placeholder="Email" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary text-lg">
+                </div>
+                <div class="mb-6">
+                    <textarea name="message" placeholder="Message" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-secondary text-lg" rows="4"></textarea>
+                </div>
+                <button type="submit" class="bg-secondary text-white py-3 px-8 rounded-full hover:bg-primary transition duration-300 w-full text-lg font-semibold">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg">&copy; 2024 ARCHAEOTECH SYSTEMS. Empowering Africa's Digital Future.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliders = document.querySelectorAll('.slider');
+            sliders.forEach(slider => {
+                let currentIndex = 0;
+                const slides = slider.querySelectorAll('img');
+                const totalSlides = slides.length;
+
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>
